@@ -25,8 +25,6 @@ TARGET_CPU_VARIANT := krait
 
 TARGET_NO_BOOTLOADER := true
 
-BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
-
 # Camera hack
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 BOARD_GLOBAL_CFLAGS += -DMETADATA_CAMERA_SOURCE
@@ -68,8 +66,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/mako/bluetooth
 # Use clang
 #USE_CLANG_PLATFORM_BUILD := true
 
-# Don't create a block based package
-BLOCK_BASED_OTA := false
+TARGET_NEEDS_GCC_LIBC := true
 
 # FIXME: HOSTAPD-derived wifi driver
 BOARD_HAS_QCOM_WLAN := true

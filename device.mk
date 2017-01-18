@@ -122,11 +122,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=320
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	telephony.lteOnGsmDevice=1 \
-	ro.telephony.default_network=9 \
-	ro.ril.def.preferred.network=9
-
 # Audio Configuration
 # FIXME: Remove persist.audio.handset.mic and persist.audio.fluence.mode
 #        while switching new audio HAL from legacy HAL
@@ -263,9 +258,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
         debug.egl.recordable.rgba8888=1
-
-PRODUCT_PROPERTY_OVERRIDES += \
-        ro.sys.sdcardfs=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qc.sensors.wl_dis=true \
